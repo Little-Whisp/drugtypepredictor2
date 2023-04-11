@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script defer src="app.js" type="module"></script>
+    <title>DrugType Preditor</title>
+</head>
+
+<body>
+<div><h3>DrugType Preditor</h3></div>
+
+<button><a href="index.html">Load page</a></button>
+<div id="view"></div>
+<div id="display"></div>
+<div>
+
+    <h4>Confusion Matrix</h4>
+
+    <table id="confusion">
+        <tr>
+            <td></td>
+            <td>Predicted Drug type A</td>
+            <td>Predicted Drug type B</td>
+            <td>Predicted Drug type C</td>
+            <td>Predicted Drug type X</td>
+            <td>Predicted Drug type Y</td>
+        </tr>
+        <tr>
+            <td>DrugType A</td>
+            <td id="atypeAtype"></td>
+            <td id="btypeAtype"></td>
+            <td id="ctypeAtype"></td>
+            <td id="xtypeAtype"></td>
+            <td id="ytypeAtype"></td>
+
+        </tr>
+        <tr>
+            <td>DrugType B</td>
+            <td id="atypeBtype"></td>
+            <td id="btypeBtype"></td>
+            <td id="ctypeBtype"></td>
+            <td id="xtypeBtype"></td>
+            <td id="ytypeBtype"></td>
+        </tr>
+
+        <tr>
+            <td>DrugType C</td>
+            <td id="atypeCtype"></td>
+            <td id="btypeCtype"></td>
+            <td id="ctypeCtype"></td>
+            <td id="xtypeCtype"></td>
+            <td id="ytypeCtype"></td>
+        </tr>
+
+        <tr>
+            <td>DrugType X</td>
+            <td id="atypeXtype"></td>
+            <td id="btypeXtype"></td>
+            <td id="ctypeXtype"></td>
+            <td id="xtypeXtype"></td>
+            <td id="ytypeXtype"></td>
+        </tr>
+
+        <tr>
+            <td>DrugType Y</td>
+            <td id="atypeYtype"></td>
+            <td id="btypeYtype"></td>
+            <td id="ctypeYtype"></td>
+            <td id="xtypeYtype"></td>
+            <td id="ytypeYtype"></td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>

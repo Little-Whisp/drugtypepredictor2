@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script defer src="savedData.js" type="module"></script>
+    <title>DrugType Preditor</title>
+</head>
+<body>
+<!--<button><a href="Trainer.html">Back to trainer</a></button>-->
+<header></header>
+
+<div class="float-container">
+    <div class="green">
+        <p>(Example data you can try out!)</p>
+        <p>Age: 43, Blood pressure: HIGH, Cholesterol: HIGH, Na_to_K: 13.972 (drug A)</p>
+        <p>Age: 58, Blood pressure: HIGH, Cholesterol: NORMAL, Na_to_K: 14.239,(drug B)</p>
+        <p>Age: 23, Blood pressure: LOW, Cholesterol: HIGH, Na_to_K: 7.298,(drug C)</p>
+        <p>Age: 69, Blood pressure: LOW, Cholesterol: NORMAL, Na_to_K: 11.455,(drug X)</p>
+        <p>Age: 32, Blood pressure: HIGH, Cholesterol: NORMAL, Na_to_K: 25.974,(drug Y)</p>
+    </div>
+</div>
+
+<div class="float-child">
+    <div class="green">
+        <p>Drug type A = Heroin, methadone, cocaine (including crack cocaine),
+            ecstasy, magic mushrooms and 'crystal meth'.</p>
+        <p>Drug type B = Speed, cannabis, ketamine, mephedrone and some amphetamines. </p>
+        <p>Drug type C = Anabolic steroids, GHB and some tranquilisers. </p>
+        <p>Drug type X = Amobarbital, Amphetamine, Barbital. </p>
+        <p>Drug type Y =Yuvafem, Yaz, Yasmin, Yosprala, Yupelri. </p>
+
+    </div>
+</div>
+
+<h1>DrugType Preditor</h1>
+
+<section class="borderedSection">
+
+    <div>Predict the outcome of the drugs that might be accurate for the patient</div>
+
+    </div>
+    <label for='Age' class="white">Age: </label><input type='number' id='Age'/>
+    <p></p>
+    <label for='BP' class="white">Blood pressure: </label>
+    <select id="BP" name="Blood pressure">
+        <option value="LOW">Low</option>
+        <option value="NORMAL">Normal</option>
+        <option value="HIGH">High</option>
+    </select>
+
+    <p></p>
+    <label for='Cholesterol' class="white">Cholesterol: </label>
+    <select id="Cholesterol" name="Cholesterol">
+        <option value="NORMAL">Normal</option>
+        <option value="HIGH">High</option>
+    </select>
+    <p></p>
+    <label for='Na_to_K' class="white">Na_to_K: </label><input type='number' id='Na_to_K'/>
+    <p></p>
+
+    <button id="test">Predict button</button>
+
+    <div id="display" ></div>
+</section>
+
+</body>
+</html>
